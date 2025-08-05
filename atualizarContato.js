@@ -12,10 +12,14 @@ export function atualizarContato() {
     console.log("--------------------------"); // SAÍDA DE DADOS:
   });
    
-  console.log("Qual contato deseja atualizar: (ID)"); // SAÍDA DE DADOS:
+  console.log("Qual contato deseja atualizar ou 0 para voltar: (ID)"); // SAÍDA DE DADOS:
 
   let idAtualizar = prompt("> "); // ENTRADA DE DADOS:
   idAtualizar = parseInt(idAtualizar);
+  if(idAtualizar==0){
+    console.clear()
+    exibirMenu()
+  }
   const contatoEscolhido = contatos.find(contato => contato.id === idAtualizar);
 
   if (!contatoEscolhido) {

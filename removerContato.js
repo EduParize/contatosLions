@@ -13,9 +13,13 @@ export function removerContato(){
         console.log("--------------------------"); // SAÍDA DE DADOS:
       });
       
-      console.log("Qual contato deseja remover: (ID)"); // SAÍDA DE DADOS:
+      console.log("Qual contato deseja remover ou 0 para voltar: (ID)"); // SAÍDA DE DADOS:
       let idRemover = prompt("> ");  // ENTRADA DE DADOS:
       idRemover = parseInt(idRemover);
+      if(idRemover==0){
+        console.clear()
+        exibirMenu()
+      }
       const indexDoContato = contatos.findIndex(contato => contato.id === idRemover);
       if (indexDoContato === -1) {
         console.clear();
