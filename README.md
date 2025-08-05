@@ -26,4 +26,3 @@ Respostas:
    -newTelefone => variavel que armazena o telefone inserido pelo usuario para a atualização do contato escolhido.
    -telefoneFormatado2 => variavel altera o telefone inserido alteriormente, adicionando "()" para o DDD e "-" entres os numeros do telefone.
    -newEmail => variavel que armazena o email inserido pelo usuario para a atualizaçãp do contato escolhido.
-  
